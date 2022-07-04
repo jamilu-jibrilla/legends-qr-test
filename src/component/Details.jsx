@@ -1,7 +1,6 @@
 //icons
 import star from "../assets/details/star.png";
 import fullstar from "../assets/details/full-star.png";
-import useravatar from "../assets/details/user-avatar.png";
 import backArrow from "../assets/details/return-arr.png";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -32,6 +31,7 @@ const Details = () => {
       .catch((error) => console.log(error.message));
   }, []);
 
+  console.log(user);
   return (
     <div className="Details">
       <Nav setDisplay={setDisplay} />
@@ -152,17 +152,17 @@ const Details = () => {
 
                   <div className="mini-sect">
                     <h3>EMPLOYMENT STATUS</h3>
-                    <h5>Grace Effiom</h5>
-                  </div>
-
-                  <div className="mini-sect">
-                    <h3>SECTOR OF EMPLOYMENT</h3>
                     <h5>{user.education.employmentStatus}</h5>
                   </div>
 
                   <div className="mini-sect">
-                    <h3>DURATION OF EMPLOYMENT</h3>
+                    <h3>SECTOR OF EMPLOYMENT</h3>
                     <h5>{user.education.sector}</h5>
+                  </div>
+
+                  <div className="mini-sect">
+                    <h3>DURATION OF EMPLOYMENT</h3>
+                    <h5>{user.education.duration}</h5>
                   </div>
 
                   <div className="mini-sect">
