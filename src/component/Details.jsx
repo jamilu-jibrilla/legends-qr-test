@@ -1,3 +1,4 @@
+//icons
 import star from "../assets/details/star.png";
 import fullstar from "../assets/details/full-star.png";
 import useravatar from "../assets/details/user-avatar.png";
@@ -5,17 +6,19 @@ import backArrow from "../assets/details/return-arr.png";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-//styles
-
 //components
 import Nav from "../component/Nav";
 import Sidebar from "../component/Sidebar";
 
-const Details = ({ display, setDisplay }) => {
+const Details = () => {
   const { id } = useParams();
 
+  //usrl
   const url = `https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/${id}`;
   const [user, setUser] = useState(null);
+
+  //state
+  const [display, setDisplay] = useState(false);
 
   // useffect
   useEffect(() => {
@@ -76,7 +79,7 @@ const Details = ({ display, setDisplay }) => {
                 </div>
                 <div className="money-sect">
                   <h4>{user.accountBalance}</h4>
-                  <p>{user.accountNumber} providus bank</p>
+                  <p>{user.accountNumber} bank</p>
                 </div>
               </div>
               <div className="links">
@@ -235,7 +238,7 @@ const Details = ({ display, setDisplay }) => {
             </div>
           </section>
         ) : (
-          <h1>Loading...</h1>
+          ""
         )}
       </main>
     </div>
