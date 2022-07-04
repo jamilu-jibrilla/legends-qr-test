@@ -1,0 +1,206 @@
+@import "./nav";
+@import "./login";
+@import "./sidebar";
+@import "./_card.scss";
+@import "./usercard";
+@import "./Pagination";
+@import "./userdetails";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font: 1em sans-serif;
+    max-width: 1440px;
+    
+  }
+  
+  
+  @media screen and (max-width:800px) {
+    
+    .none {
+      display: none;
+     }
+    
+     .show {
+      display: flex;
+     }
+  }
+  
+
+main {
+   display: flex;
+   font-style: normal;   
+   
+
+
+   .main {
+       padding: 3rem; 
+       width: 80vw;
+       background-color: #FBFBFB;
+
+
+       h1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        margin-bottom: 25px;
+       }
+
+       .cards {
+            display: flex;
+       }
+
+        
+       .pagination {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      
+      .paginationItem {
+        margin: 30px 5px;
+        cursor: pointer;
+      }
+      
+      .paginationItem span {
+        margin: 0px 10px;
+      }
+      
+      .prev,
+      .next {
+        border: none;
+        margin: 0 40px;
+        cursor: pointer;
+      }
+      
+      .paginationItem.active {
+        color: #888;
+        pointer-events: none;
+      }
+      
+      .prev.disabled,
+      .next.disabled {
+        pointer-events: none;
+        box-shadow: none;
+        color: #999;
+      }
+
+
+
+       table {
+            border-collapse: collapse;
+            color: rgba(0, 0, 0, 0.8);
+            margin-top: 30px;
+            background: #FFFFFF;
+            border: 1px solid rgba(33, 63, 125, 0.06);
+            box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+            border-radius: 4px;
+            width: 100%;
+
+            thead {
+                background-color: white;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 14px;
+                text-transform: uppercase;
+            
+                th {            
+                    text-align: start;       
+                    padding: 1.8em 1em;
+                    img {
+                        color: #545F7D;
+                        width: 13px;
+                        height: 10px;
+                        margin-left: 2px;
+                    }
+                }
+            
+            }
+
+            td {
+                text-align: start;     
+                padding: 1em 1em;
+                border-bottom: rgb(244, 244, 244);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                color: #545F7D;
+            }
+        
+
+            button {
+                font-size: 0.81em;
+                color: white;
+                background-color: rgb(42, 80, 80);
+                outline: none;
+                border: none;
+                width: 80px;
+                padding: 0.2em 0.5em;
+                border-radius: 100px;
+            }
+        }
+   
+    }
+
+
+
+    @media screen and (max-width: 700px) {
+        
+        .main {
+            
+            width: 100vw;
+            padding: 1rem;
+            
+            h1 {
+                margin-bottom: 15px;
+                margin-left: 12px;
+            }
+            
+            .cards {
+                flex-direction: column;
+            }
+                            
+            .wrapper {
+                width: 90vw;
+                overflow: scroll;
+            }
+
+            table {
+                border-collapse: collapse;
+                background-color: white;
+                color: rgba(0, 0, 0, 0.8);
+                 
+                thead {
+                    background-color: rgb(244, 244, 244);
+                    th {
+                        img {
+                            display: none;
+                        }
+                    }
+                }
+
+                th,
+                td {
+                    padding: 1.3em 1em;
+                    text-align: start;
+                }
+                
+                button {
+                    font-size: 0.81em;
+                    color: white;
+                    background-color: rgb(42, 80, 80);
+                    outline: none;
+                    border: none;
+                    width: 60px;
+                    border-radius: 30px;
+                    text-align: start
+                }
+            }
+        }
+    }
+
+}
+

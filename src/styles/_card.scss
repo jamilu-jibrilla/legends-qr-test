@@ -1,0 +1,43 @@
+.Card {
+  
+    width: 240px;
+    height: 160px;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    margin: 10px 20px 0px 0px;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+
+    .icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    .users {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+
+    .numbers {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        text-transform: uppercase;
+    }
+
+   
+   
+   
+    @media screen and (max-width:800px) {
+      width: 95%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      height: 160px; 
+   }
+}

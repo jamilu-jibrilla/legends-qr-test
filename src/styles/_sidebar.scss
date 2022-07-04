@@ -1,0 +1,64 @@
+.Sidebar {
+    color: #213F7D;
+    width: 20vw;
+    // height: 88vh;
+    // overflow-y: scroll;
+    padding: 2rem;
+    font-size: 14px;
+    font-family: 'Work Sans';
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+
+    div {
+        transition: all 2s;
+
+        display: flex;
+        align-items: center;
+        font-style: normal;
+        font-weight: 400;
+        height: 30px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .sidebar-text {
+        margin: 0px 12px;
+    }
+
+
+    .switch-org {
+        margin-bottom: 20px;
+    }
+
+    .sub-header {
+        margin: 35px 0px 15px 0px;  
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        color: #545F7D;
+
+    }
+
+    .dashboard {
+        margin-bottom: 15px;
+
+        span {
+            height: 11px;
+            width: 19px;
+        }
+    }
+
+    .log-out {
+        margin-top: 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    }
+
+
+    @media screen and (max-width:800px) {
+        width: 100vw;
+        height: 200%;
+        position: absolute;
+        z-index: 11;
+        background-color: white;
+    }
+}
