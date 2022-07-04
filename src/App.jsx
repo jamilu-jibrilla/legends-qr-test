@@ -21,7 +21,29 @@ import icon4 from "../src/assets/main/icon4.png";
 import filter from "../src/assets/main/filter-results-button.png";
 
 const App = ({ users }) => {
-  const icons = [icon, icon2, icon3, icon4];
+  const icons = [
+    {
+      icon: icon,
+      text: "USERS",
+      num: "2,453",
+    },
+
+    {
+      icon: icon2,
+      text: "ACTIVE USERS",
+      num: "2,453",
+    },
+    {
+      icon: icon3,
+      text: "USERS WITH LOANS",
+      num: "12,453",
+    },
+    {
+      icon: icon4,
+      text: "USERS WITH SAVINGS",
+      num: "102,453",
+    },
+  ];
 
   //state
   const [pages, setPage] = useState(10);
@@ -58,8 +80,13 @@ const App = ({ users }) => {
           <h1>Users</h1>
 
           <section className="cards">
-            {icons.map((icon) => (
-              <Card key={icon} icon={icon} />
+            {icons.map((item) => (
+              <Card
+                key={item.num}
+                icon={item.icon}
+                text={item.text}
+                num={item.num}
+              />
             ))}
           </section>
 
