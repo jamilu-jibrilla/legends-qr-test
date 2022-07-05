@@ -3,13 +3,14 @@
 @import "./sidebar";
 @import "./_card.scss";
 @import "./usercard";
-@import "./Pagination";
 @import "./userdetails";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Work+Sans:wght@300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
   box-sizing: border-box;
   font: 1em sans-serif;
+  font-family: "Work Sans", sans-serif;
   max-width: 1440px;
 }
 
@@ -85,7 +86,6 @@ main {
       border: 1px solid rgba(33, 63, 125, 0.06);
       box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
       border-radius: 4px;
-      width: 100%;
 
       thead {
         background-color: white;
@@ -93,7 +93,6 @@ main {
         font-style: normal;
         font-weight: 600;
         font-size: 12px;
-        line-height: 14px;
         text-transform: uppercase;
 
         th {
@@ -106,6 +105,10 @@ main {
             margin-left: 2px;
           }
         }
+      }
+
+      tr {
+        position: relative;
       }
 
       td {
@@ -135,8 +138,10 @@ main {
   @media screen and (max-width: 700px) {
     .main {
       width: 100vw;
+      height: 90vh;
       padding: 1rem;
       margin-top: 13vh;
+      overflow-y: scroll;
       overflow-x: hidden;
 
       h1 {

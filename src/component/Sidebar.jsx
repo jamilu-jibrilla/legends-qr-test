@@ -195,7 +195,9 @@ function Sidebar({ display }) {
         <span>
           <img src={logOut} alt="icon" />
         </span>
-        <h3 className="sidebar-text">Logout</h3>
+        <a href="/">
+          <h3 className="sidebar-text">Logout</h3>
+        </a>
       </div>
     </div>
   );

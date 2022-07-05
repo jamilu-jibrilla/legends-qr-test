@@ -1,37 +1,72 @@
-
-
 .option {
-    text-align: center;
-    font-size: 1.1rem !important;
-    transform: rotate(270deg);
-    font-weight: bolder;
-    cursor: pointer;
+  text-align: center;
+  font-size: 1.1rem !important;
+  transform: rotate(270deg);
+  font-weight: bolder;
+  cursor: pointer;
 }
 a {
-    color: inherit;
+  color: inherit;
 }
 
 .btn {
-    padding: 4px 18px;
-    border-radius: 100px;
-    
+  padding: 4px 18px;
+  border-radius: 100px;
 }
 .pending {
-    background-color: #fcf4dc;
-    color: #E9B200;
+  background-color: #fcf4dc;
+  color: #e9b200;
 }
 
 .inactive {
-    color: #545F7D;
-    background-color: #f5f5f8;
+  color: #545f7d;
+  background-color: #f5f5f8;
 }
 
 .blacklisted {
-    color: #E4033B;
-    background-color: hsl(347, 26%, 87%);
+  color: #e4033b;
+  background-color: hsl(347, 26%, 87%);
 }
 
 .active {
-    color: #39CD62;
-    background-color: #dcf0e2;
+  color: #39cd62;
+  background-color: #dcf0e2;
+}
+
+.card-option {
+  display: none;
+  width: 150px;
+  position: absolute;
+  right: 0px;
+  top: 30px;
+  z-index: 20;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #545f7d;
+  text-align: center;
+  margin-top: 10px;
+  background: #ffffff;
+  border: 1px solid rgba(84, 95, 125, 0.04);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  padding: 1rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    cursor: pointer;
+    margin: 6px 0px;
+    display: flex;
+    justify-content: start;
+    img {
+      margin-right: 6px;
+    }
+  }
+}
+
+.display {
+  display: block;
 }

@@ -3,21 +3,24 @@
   width: 20vw;
   // height: 88vh;
   // overflow-y: scroll;
-  padding: 2rem;
+  padding: 2rem 0rem;
   font-size: 14px;
   font-family: "Work Sans";
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
 
   div {
-    transition: all 2s;
-
     display: flex;
     align-items: center;
     font-style: normal;
+    padding: 0rem 2rem;
     font-weight: 400;
     height: 30px;
     margin-bottom: 10px;
     cursor: pointer;
+  }
+
+  div:hover {
+    background: #e1ecec;
   }
 
   .sidebar-text {
@@ -29,6 +32,7 @@
   }
 
   .sub-header {
+    padding: 0rem 1rem;
     margin: 35px 0px 15px 0px;
     font-size: 14px;
     font-style: normal;

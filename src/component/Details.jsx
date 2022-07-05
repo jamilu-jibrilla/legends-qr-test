@@ -164,14 +164,14 @@ const Details = () => {
                     <h3>DURATION OF EMPLOYMENT</h3>
                     <h5>{user.education.duration}</h5>
                   </div>
+                </div>
 
+                <div className="group2">
                   <div className="mini-sect">
                     <h3>OFFICE MAIL</h3>
                     <h5>{user.education.officeEmail}</h5>
                   </div>
-                </div>
 
-                <div className="group2">
                   <div className="mini-sect">
                     <h3>MONTHLY INCOME</h3>
                     <h5>{`${user.education.monthlyIncome[0]}`}</h5>
@@ -180,11 +180,6 @@ const Details = () => {
                   <div className="mini-sect">
                     <h3>LOAN REPAYMENT</h3>
                     <h5>{user.education.loanRepayment}</h5>
-                  </div>
-
-                  <div className="mini-sect">
-                    <h3>TYPE OF RESIDENCE</h3>
-                    <h5>unknown</h5>
                   </div>
                 </div>
               </div>
