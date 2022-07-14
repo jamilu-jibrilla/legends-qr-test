@@ -159,7 +159,18 @@ main {
         overflow: scroll;
       }
 
+      .pagination {
+        justify-content: center;
+      }
+
+      .prev,
+      .next {
+        margin: 0 20px;
+      }
+
       table {
+        width: 200%;
+        position: relative;
         border-collapse: collapse;
         background-color: white;
         color: rgba(0, 0, 0, 0.8);

@@ -58,7 +58,7 @@ a {
 
   p {
     cursor: pointer;
-    margin: 6px 0px;
+    margin: 7px 0px;
     display: flex;
     justify-content: start;
     img {
@@ -69,4 +69,10 @@ a {
 
 .display {
   display: block;
+}
+
+@media screen and (max-width: 800px) {
+  .card-option {
+    top: 40px;
+  }
 }

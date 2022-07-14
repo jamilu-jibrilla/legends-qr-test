@@ -31,7 +31,6 @@ const Details = () => {
       .catch((error) => console.log(error.message));
   }, []);
 
-  console.log(user);
   return (
     <div className="Details">
       <Nav setDisplay={setDisplay} />

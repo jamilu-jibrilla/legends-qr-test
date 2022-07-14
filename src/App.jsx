@@ -25,7 +25,7 @@ const App = ({ users }) => {
     {
       icon: icon,
       text: "USERS",
-      num: "2,453",
+      num: "2,452",
     },
 
     {
