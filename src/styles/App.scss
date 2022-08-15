@@ -98,6 +98,7 @@ main {
         th {
           text-align: start;
           padding: 1.8em 1em;
+          white-space: nowrap;
           img {
             color: #545f7d;
             width: 13px;
@@ -113,6 +114,7 @@ main {
 
       td {
         text-align: start;
+        white-space: nowrap;
         padding: 1em 1em;
         border-bottom: rgb(244, 244, 244);
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -177,11 +179,6 @@ main {
 
         thead {
           background-color: rgb(244, 244, 244);
-          th {
-            img {
-              display: none;
-            }
-          }
         }
 
         th,
