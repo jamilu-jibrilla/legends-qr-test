@@ -3,7 +3,7 @@ import star from "../assets/details/star.png";
 import fullstar from "../assets/details/full-star.png";
 import backArrow from "../assets/details/return-arr.png";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 //components
 import Nav from "../component/Nav";
@@ -29,7 +29,7 @@ const Details = () => {
         setUser(res);
       })
       .catch((error) => console.log(error.message));
-  }, []);
+  }, [url]);
 
   return (
     <div className="Details">
@@ -39,9 +39,9 @@ const Details = () => {
         {user ? (
           <section className="user-details">
             <h3 className="back">
-              <a href="/Home">
+              <Link to="/Home">
                 <img src={backArrow} alt="" />
-              </a>
+              </Link>
               <a className="arr-text" href="/Home">
                 back to users
               </a>

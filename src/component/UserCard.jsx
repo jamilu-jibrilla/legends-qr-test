@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import activeUser from "../assets/main/active-user.png";
 import blacklistUser from "../assets/main/blacklist-user.png";
 import viewUser from "../assets/main/view-user.png";
@@ -45,11 +46,11 @@ const UserCard = ({ data }) => {
         ...
       </td>
       <div className="card-option">
-        <a href={`/home/${data.id}`}>
+        <Link to={`/home/${data.id}`}>
           <p>
             <img src={activeUser} alt="icon" /> View Details
           </p>
-        </a>
+        </Link>
         <p>
           <img src={blacklistUser} alt="icon" /> Blacklist User
         </p>

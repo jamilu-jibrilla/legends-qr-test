@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "../assets/logo.svg";
 
 function Login() {
@@ -15,9 +16,9 @@ function Login() {
         <input type="password" placeholder="Password" />
         <p className="forgot-password">forgot password?</p>
 
-        <a href="/home">
+        <Link to="/home">
           <button className="btn-login">Login</button>
-        </a>
+        </Link>
       </div>
     </div>
   );
