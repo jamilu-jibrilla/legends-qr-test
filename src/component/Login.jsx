@@ -4,7 +4,7 @@ function Login() {
   return (
     <div className="Login">
       <div className="sect1">
-        <img className="logo" src={Logo} alt="logo image" />
+        <img className="logo" src={Logo} alt="logo" />
         <section className="log-img"></section>
       </div>
 
